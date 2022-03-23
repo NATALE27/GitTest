@@ -678,6 +678,7 @@ tempPlot %>%
   
 # Boxplot con facet para hacer caracterización ambiental ----
 ## metales pesados ----
+
 p1 <- tempPlot %>%
   mutate(NOM_MUN = str_wrap(NOM_MUN, width = 30)) %>%
   filter(Categoria == "Arsénico") %>% 
